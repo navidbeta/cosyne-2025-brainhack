@@ -1,0 +1,141 @@
+# Figure Methodology Steps for Reproduction
+
+## Figure 1
+
+**Caption:** Prior knowledge facilitates
+
+**Methodology Steps:**
+
+To recreate Figure 1 from the research paper, the following methodology steps are needed:
+
+1. **Experimental Design and Data Collection**:
+   - Use five rats trained in a spatial memory task requiring hippocampal-prefrontal interactions.
+   - Implement a continuous alternation W-maze task where rats return to the center from either the right or left side of a W-track and choose the opposite side.
+   - Ensure rats are food-deprived and naive to the W-mazes and experimental room.
+   - Reward rats for performing the continuous alternation task.
+
+2. **Data Preprocessing**:
+   - Ensure that the rats are able to remember and discriminate between the familiar and novel environments.
+   - Analyze the behavioral data of three additional rats from a previous experiment to confirm the ability to discriminate between environments.
+
+3. **Data Analysis**:
+   - Analyze the firing patterns of prefrontal cortex (PFC) neurons to distinguish between the two task sequences critical for performance (IN R-OUT L vs. IN L-OUT R).
+   - Generalize responses across the two inbound (IN) and outbound (OUT) trajectories covering distinct spatial locations within a task sequence.
+
+4. **Statistical Analysis**:
+   - Use statistical methods to determine if prior knowledge facilitates learning in a novel environment.
+   - Compare the discriminability of rats from the familiar and novel environments.
+
+5. **Visualization**:
+   - Create the graphical representation of the experimental design and results, as shown in Figure 1 of the paper.
+
+In summary, to recreate Figure 1, researchers need to conduct experiments with rats in a spatial memory task, preprocess the data to ensure discrimination between environments, analyze PFC neuron firing patterns, perform statistical analysis, and visualize the results to show how prior knowledge facilitates learning in a novel environment.
+
+---
+
+## Figure 2
+
+**Caption:** Hippocampus shows global remapping, whereas prefrontal spatial representations generalize across environments
+
+**Methodology Steps:**
+
+To recreate Figure 2 from the research paper, the following methodology steps are needed:
+
+1. **Data Collection**: Simultaneous recordings of neuronal activity from 4 CA1 and 4 PFC cells across different environments were obtained.
+
+2. **Data Preprocessing**:
+   - **Spatial Representation Extraction**: 2D rate maps were generated for each cell to represent spatial firing patterns.
+   
+3. **Data Analysis**:
+   - **Decoding Analysis**:
+     - **Decoding Performance Calculation**: Decoding performance was assessed for CA1 and PFC cells across environments.
+     - **Error Analysis**: Decoding errors were calculated and compared between CA1 and PFC cells.
+     - **Generalization Assessment**: Generalization of spatial representations across environments was evaluated for PFC cells.
+   
+4. **Statistical Analysis**:
+   - **Comparative Analysis**:
+     - **Within-Cell Type Comparison**: Decoding performance within CA1 and PFC cells was compared.
+     - **Between-Cell Type Comparison**: Decoding performance between CA1 and PFC cells was compared.
+     - **Trial Comparison**: Changes in decoding error between trials after environment switching were statistically analyzed.
+   
+5. **Visualization**:
+   - **Plotting**: The 2D rate maps of CA1 and PFC cells were plotted to visually represent the spatial firing patterns.
+   - **Figure Generation**: The figure illustrating the global remapping in the hippocampus and generalization of prefrontal spatial representations across environments was created.
+
+6. **Interpretation**:
+   - **Inference**: The results suggest that hippocampal spatial representations undergo global remapping, while prefrontal spatial representations exhibit generalization across environments.
+   
+7. **Validation**:
+   - **Statistical Validation**: The statistical significance of the observed differences in spatial representations between CA1 and PFC cells was confirmed using appropriate statistical tests.
+   
+8. **Contextualization**:
+   - **Relating to Previous Studies**: The findings were compared and discussed in the context of previous reports on hippocampal and prefrontal spatial representations.
+
+By following these steps, researchers can recreate Figure 2 and analyze the differences in spatial representations between the hippocampus and prefrontal cortex across different environments as described in the research paper.
+
+---
+
+## Figure 3
+
+**Caption:** Distinct geometric representations of task space in CA1 and PFC
+
+**Methodology Steps:**
+
+To recreate Figure 3, the following methodology steps are needed:
+
+1. **Data Processing Steps**:
+   - **Transformation**: Transform the raw neural data into a format suitable for analysis, likely involving converting spike data into firing rates or other relevant neural activity measures.
+   - **Normalization**: Normalize the neural data to account for baseline firing rates or other variations across neurons.
+   - **Filtering**: Apply any necessary filters to remove noise or irrelevant signals from the neural data.
+
+2. **Statistical Methods or Algorithms**:
+   - **Correlation Analysis**: Conduct correlation analysis to compare the selectivity indices of IN and OUT trajectories in CA1 and PFC.
+   - **Trajectory Analysis**: Analyze the trajectories within task sequences to identify geometric representations in CA1 and PFC.
+   - **Distance Metrics**: Calculate distances between neural states to compare trajectory phases and spatial locations in PFC and CA1.
+
+3. **Parameters or Thresholds**:
+   - **Task Sequence Selectivity**: Define parameters or thresholds to assess the selectivity of PFC cells for different task sequences.
+   - **Distance Thresholds**: Set thresholds for distances between neural states to determine significant differences in representations.
+
+4. **Input Data Requirements and Preprocessing**:
+   - **Neural Data**: Input neural data from CA1 and PFC regions.
+   - **Task Sequences**: Include information on task sequences (e.g., INSeq and OutSeq trajectories).
+   - **Spatial Information**: Incorporate spatial information related to trajectories and locations.
+   - **Phase Alignment**: Align trajectory phases to compare neural states across different trajectory types.
+
+By following these steps and methodologies, researchers can recreate the distinct geometric representations of task space in CA1 and PFC as depicted in Figure 3 of the research paper.
+
+---
+
+## Figure 4
+
+**Caption:** Distinct abstraction in CA1 and PFC representations
+
+**Methodology Steps:**
+
+To recreate Figure 4, which shows the distinct abstraction in CA1 and PFC representations, the following methodology steps are needed:
+
+1. **Data Processing Steps**:
+   - **UMAP Embeddings**: Perform UMAP (Uniform Manifold Approximation and Projection) embedding on the neural data for both CA1 and PFC regions to visualize the data in lower dimensions.
+   - **Clustering**: Cluster the data into 8 clusters based on the early and late trajectory phases of 4 trajectory types. Color code the clusters for visualization.
+
+2. **Statistical Methods or Algorithms**:
+   - **Linear Decoder**: Train a linear decoder on 3 out of 4 trajectory types to classify early and late trajectory phases. Test the decoder on the remaining trajectory type not used for training.
+   - **Cross-Condition Generalization Performance (CCGP)**: Estimate the generalization performance using CCGP to assess how well neural manifolds generalize to unseen experimental conditions.
+   - **Bayesian Decoding**: Utilize Bayesian decoding for decoding neural activity patterns related to trajectory phases and task sequences.
+
+3. **Parameters or Thresholds**:
+   - **Trajectory Phase Definition**: Define early and late trajectory phases as 20%-30% and 70%-80% of the trajectory length.
+   - **Number of Trajectory Types**: Train the decoders on 3 out of 4 trajectory types.
+
+4. **Input Data Requirements and Preprocessing**:
+   - **Neural Data**: Utilize neural data from CA1 and PFC regions.
+   - **Task Variables**: Consider task variables such as trajectory phases, task sequences (e.g., IN R-OUT L vs. IN L-OUT R), and environmental familiarity.
+   - **Single-Cell Remapping**: Quantify single-cell remapping to understand changes in neural representations.
+   - **Population Vector Similarity**: Calculate population vector similarity to assess the similarity of neural representations across different conditions.
+   - **Ramping Response Identification**: Identify ramping responses in neural activity patterns.
+  
+By following these methodology steps, researchers can recreate Figure 4 and analyze the distinct abstraction in CA1 and PFC representations based on the provided data and statistical analyses.
+
+---
+

@@ -1,0 +1,24 @@
+Result 1: Rats Generalize Navigational Rules Across Distinct Environments
+1. Description and Significance: The study found that rats can generalize navigational rules across distinct environments. This finding is significant as it provides insight into how cognitive maps are transformed across hippocampal-prefrontal circuits to support abstraction and generalization.
+2. Data Processing: The researchers simultaneously recorded hippocampal-prefrontal ensembles as rats generalized navigational rules across distinct environments. 
+3. Methodology Quote: "Here, we simultaneously record hippocampal-prefrontal ensembles as rats generalize navigational rules across distinct environments."
+
+Result 2: Hippocampal Representational Maps Maintain Specificity of Separate Environments
+1. Description and Significance: The study found that hippocampal representational maps maintain the specificity of separate environments. This finding is significant as it provides insight into the role of the hippocampus in memory specificity.
+2. Data Processing: The researchers analyzed the hippocampal representational maps of the rats as they navigated different environments.
+3. Methodology Quote: "We find that, whereas hippocampal representational maps maintain specificity of separate environments..."
+
+Result 3: Prefrontal Maps Generalize Across Environments
+1. Description and Significance: The study found that prefrontal maps generalize across environments. This finding is significant as it provides insight into the role of the prefrontal cortex in abstraction and generalization.
+2. Data Processing: The researchers analyzed the prefrontal maps of the rats as they navigated different environments.
+3. Methodology Quote: "...prefrontal maps generalize across environments."
+
+Result 4: Distinct Representational Geometries in Hippocampal and Prefrontal Maps
+1. Description and Significance: The study found that while both hippocampal and prefrontal maps are structured within a neural manifold of population activity, they have distinct representational geometries. This finding is significant as it provides insight into how cognitive maps are structured to support abstraction and generalization while maintaining memory specificity.
+2. Data Processing: The researchers used Uniform Manifold Approximation and Projection (UMAP) to reduce n-dimensional data to extract low-dimensional neural manifolds.
+3. Methodology Quote: "The hyperparameters for UMAP were: ‘n_dims’ = 3, ‘metric’ = ‘cosine’, ‘n_neighbours’ = 50, and ‘min_dist’ = 0.6, similar to previous studies."
+
+Result 5: Prefrontal Geometry Enables Abstraction of Rule-Informative Variables
+1. Description and Significance: The study found that prefrontal geometry enables abstraction of rule-informative variables, a representational format that generalizes to novel conditions of existing variable classes. This finding is significant as it provides insight into how the prefrontal cortex supports abstraction and generalization.
+2. Data Processing: The researchers analyzed the prefrontal geometry of the rats as they navigated different environments.
+3. Methodology Quote: "Prefrontal geometry enables abstraction of rule-informative variables, a representational format that generalizes to novel conditions of existing variable classes."

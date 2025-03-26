@@ -1,0 +1,13 @@
+1. **Datasets Used:**
+   - The paper utilized datasets obtained from rats as they navigated through different environments. The authors state, "Here, we simultaneously record hippocampal-prefrontal ensembles as rats generalize navigational rules across distinct environments."
+
+2. **Data Processing/Preparation:**
+   - The datasets were processed to analyze how cognitive maps are transformed across hippocampal-prefrontal circuits to support abstraction and generalization. The hippocampal maps maintained specificity of separate environments, while prefrontal maps generalized across environments. The data were structured within neural manifolds of population activity with distinct representational geometries.
+
+3. **Notable Characteristics of the Data:**
+   - The data involved neural ensembles recorded from the hippocampus and prefrontal cortex of rats as they navigated through different environments. The datasets captured how cognitive maps were structured into distinct geometric representations to support abstraction and generalization while maintaining memory specificity.
+
+4. **Application of Datasets to Computational Methods:**
+   - The datasets were applied to analyze how hippocampal and prefrontal representations differ in encoding spatial cognitive maps and task knowledge. The prefrontal geometry enabled abstraction of rule-informative variables in a format that generalized to novel conditions, while hippocampal geometry lacked such abstraction. Computational methods were used to decode neural responses to task variables in novel conditions and to compare the levels of abstraction in CA1 and PFC representations.
+
+By analyzing the neural ensembles recorded from rats navigating through different environments, the study aimed to understand how cognitive maps are transformed and structured within hippocampal-prefrontal circuits to support memory generalization and abstraction.

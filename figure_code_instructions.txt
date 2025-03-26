@@ -1,0 +1,62 @@
+Figure 1: Prior knowledge facilitates
+1. Explanation: This figure seems to illustrate the experimental design of a spatial memory task performed by rats. The task involves a W-maze where rats have to return to the center (C) from either the right (R) or left (L) side. The figure is significant as it provides a visual representation of the experimental setup and the task that the rats are performing.
+
+2. Data Preparation: The data for this figure would likely come from observations of the rats performing the task. This could be represented as a list of sequences, where each sequence represents a rat's path through the maze. 
+
+3. Python Code:
+```python
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+# Create a new figure
+fig, ax = plt.subplots()
+
+# Draw the W-maze
+rect1 = patches.Rectangle((0.2, 0.5), 0.2, 0.1, linewidth=1, edgecolor='r', facecolor='none')
+rect2 = patches.Rectangle((0.6, 0.5), 0.2, 0.1, linewidth=1, edgecolor='r', facecolor='none')
+rect3 = patches.Rectangle((0.4, 0.4), 0.2, 0.3, linewidth=1, edgecolor='r', facecolor='none')
+
+ax.add_patch(rect1)
+ax.add_patch(rect2)
+ax.add_patch(rect3)
+
+# Add labels
+plt.text(0.25, 0.55, 'L', fontsize=12)
+plt.text(0.65, 0.55, 'R', fontsize=12)
+plt.text(0.45, 0.35, 'C', fontsize=12)
+
+plt.xlim(0, 1)
+plt.ylim(0, 1)
+plt.axis('off')
+plt.show()
+```
+
+Figure 2: Hippocampus shows global remapping, whereas prefrontal spatial representations generalize across environments
+1. Explanation: This figure seems to compare the spatial representations in the hippocampus and prefrontal cortex of rats as they navigate through different environments. The figure is significant as it shows how these two brain regions process spatial information differently.
+
+2. Data Preparation: The data for this figure would likely come from neural recordings from the hippocampus and prefrontal cortex of the rats as they perform the task in different environments. This could be represented as a 2D array where each row represents a trial and each column represents a neuron. The value in each cell would represent the firing rate of that neuron during that trial.
+
+3. Python Code:
+```python
+import seaborn as sns
+import numpy as np
+
+# Generate some sample data
+np.random.seed(0)
+hippocampus_data = np.random.rand(100, 10)
+prefrontal_data = np.random.rand(100, 10)
+
+# Create a heatmap for each dataset
+fig, axs = plt.subplots(2, 1, figsize=(10, 10))
+
+sns.heatmap(hippocampus_data, ax=axs[0], cmap='viridis')
+axs[0].set_title('Hippocampus')
+
+sns.heatmap(prefrontal_data, ax=axs[1], cmap='viridis')
+axs[1].set_title('Prefrontal Cortex')
+
+plt.tight_layout()
+plt.show()
+```
+
+The code for Figures 3 and 4 would be similar, but would require additional data and more complex visualizations. The data would likely come from more specific neural recordings and the visualizations might involve scatter plots, line plots, or other types of plots to represent the different variables being studied.

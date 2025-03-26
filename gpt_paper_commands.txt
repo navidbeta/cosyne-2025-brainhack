@@ -1,0 +1,112 @@
+# GPT PAPER ANALYSIS COMMAND TEMPLATES
+
+## Template 1: Extracting Paper Metadata
+```
+Analyze this scientific paper and extract the following metadata in a structured format:
+1. Title
+2. Authors (with affiliations if available)
+3. Journal/Conference name
+4. Publication date
+5. DOI/Identifier
+6. Abstract (complete text)
+7. Keywords
+8. Main research areas/fields
+9. Corresponding author contact information
+
+Format the extracted information in a clean, structured way that can be easily parsed.
+```
+
+## Template 2: Finding Analysis and Reproduction
+```
+Focus on Finding #[X] in this paper about [brief topic description].
+
+1. IDENTIFICATION:
+   - Locate and extract all text, figures, tables, and references related to this finding
+   - Identify where in the paper this finding is mentioned (sections, page numbers)
+   - Extract the exact statements that describe this finding
+
+2. CONTEXT ANALYSIS:
+   - Explain what question or hypothesis this finding addresses
+   - Describe how this finding relates to the paper's overall objectives
+   - Summarize what was previously known about this topic before this finding
+
+3. METHODOLOGY EXTRACTION:
+   - Detail all methods, techniques, and protocols used to produce this finding
+   - List all equipment, software, and materials referenced
+   - Extract any parameters, settings, or configurations mentioned
+   - Identify statistical methods or analyses applied
+
+4. DATA REQUIREMENTS:
+   - List all datasets used to generate this finding
+   - For each dataset:
+     * Describe where to find equivalent data (repositories, databases)
+     * Specify the format, size, and structure needed
+     * Note any preprocessing or transformations required
+   - Explain any data filtering or selection criteria applied
+
+5. REPRODUCTION STEPS:
+   - Provide a step-by-step procedure to reproduce this finding
+   - Include code snippets or algorithms if mentioned
+   - Detail computational requirements (hardware, software)
+   - Identify potential challenges in reproduction
+   - Note any controls or validation steps
+
+6. VALIDATION:
+   - Explain how the authors validated this finding
+   - Describe what results would indicate successful reproduction
+   - List metrics or measurements used to evaluate success
+
+7. LIMITATIONS:
+   - Note any limitations or constraints on this finding
+   - Identify factors that might affect reproducibility
+
+Organize this information in a clear, structured format that could serve as a complete guide for reproducing this specific finding.
+```
+
+## Usage Instructions
+
+### For Metadata Extraction:
+1. Copy the Template 1 command
+2. Submit it to GPT along with the paper (PDF, text, or citation)
+3. If needed, ask for specific format adjustments (JSON, YAML, etc.)
+
+### For Finding Analysis:
+1. First identify the key findings in the paper
+2. For each finding:
+   - Copy Template 2
+   - Replace [X] with the finding number or identifier
+   - Replace [brief topic description] with a short description
+3. Submit to GPT along with the relevant paper sections
+4. For large papers, you may need to chunk the paper and provide:
+   - The abstract
+   - The methods section
+   - The results section related to the finding
+   - Any relevant figures/tables and their captions
+
+### Database Queries:
+When the model suggests specific datasets, use queries like:
+```
+SELECT * FROM database_name 
+WHERE data_type = '[specified type]' 
+AND collection_date BETWEEN '[start_date]' AND '[end_date]'
+AND [other conditions specified in the finding];
+```
+
+### For Figure-Specific Analysis:
+```
+Analyze Figure [X] from this paper and explain:
+1. What this figure shows
+2. How the data for this figure was generated
+3. The exact methodology to reproduce similar results
+4. What the results in this figure tell us about the finding
+```
+
+### For Methods Clarification:
+```
+Extract all methodological details for [specific technique] mentioned in this paper. Include:
+1. All reagents/materials with quantities
+2. Step-by-step protocol
+3. Equipment settings and parameters
+4. Controls and validation steps
+5. Any troubleshooting tips mentioned
+``` 
